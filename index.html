@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mari Quimi - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Mari Quimi
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          mai@jqemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+  <a class="topmenu" href="#about-me">About Me</a>
+  <a class="topmenu" href="#projects">Project Details</a>
+  <a class="topmenu" href="#skills">Skills</a>
+  <a class="topmenu" href="#recommendations">Recommendations</a>
+</div>
+
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="./profile.png" class="profile_image" alt="Mari Quimi"/>      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Mari Quimi! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+        </h1>
+          <p>
+            I am a frontend developer passionate about building clean, responsive and user-friendly web interfaces.
+            I work with HTML, CSS and JavaScript, and I enjoy turning ideas into polished, functional pages.
+            I have built projects such as QR code landing pages and interactive UI components,
+            and I am always looking to learn new tools and improve my craft.
+          </p>
+      </div>
+    </section>
+  <!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div style="clear:both;"></div>
+  
+    <div class="all_skills">
+      <div class="skill">
+        <img src="html_finalprojimages/html5.png"/>
+        <h6>HTML</h6>
+        <p>4 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="html_finalprojimages/js.jpeg"/>
+        <h6>JavaScript</h6>
+        <p>3 years experience</p>
+      </div>  
+  
+      <div class="skill">
+        <img src="html_finalprojimages/java.png"/>
+        <h6>Java</h6>
+        <p>4 years experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/react.png"/>
+        <h6>React</h6>
+        <p>4 years experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/node.png"/>
+        <h6>Node.js</h6>
+        <p>4 years experience</p>
+      </div>
+  
+      <div class="skill">
+        <img src="html_finalprojimages/CSS3.png"/>
+        <h6>CSS</h6>
+        <p>4 years experience</p>
+      </div>
+    </div>
+  </section>
+  
+        <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2>
+          Projects
+        </h2>
+        <div style="clear:both;"></div>
+  
+          <div id="projects-container" class="projects-container">
+            <div class="project-card">
+              <h3>QR-Enabled Information Portals</h3>
+              <ul>
+                <li>Designed and developed responsive informational landing pages using HTML and CSS, allowing users to scan QR codes for instant access to detailed, structured content.</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+              <h3>Full-Stack Dynamic Web Application</h3>
+              <ul>
+                <li>Building a fully functional end-to-end website, integrating a structured frontend with interactive features using JavaScript and modern styling practices.</li>
+              </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+                <h3>Frontend Development & UI Redesign (Produbanco Internship)</h3>
+                <ul>
+                  <li>Contributed as a Frontend Intern by redesigning a core user interface screen, implementing custom interactive buttons, and applying cohesive CSS styles aligned with the corporate design system.</li>
+                </ul>
+            </div>
+          </div>
+    
+  
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div style="clear:both;"></div>
+        <div class="all_recommendations" id="all_recommendations">
+          <div class="recommendation">
+            <span>“</span>
+            Maria showed outstanding frontend skills during her time with us. Her eye for UI styling and modern button components significantly elevated our platform's overall user experience.
+            <span>”</span>
+          </div>
+          <div class="recommendation">
+            <span>“</span>
+            She is a dedicated developer who builds fully functional web features with great efficiency. Her structured approach to writing clean HTML and CSS makes her a fantastic asset.
+            <span>”</span>
+          </div>
+          <div class="recommendation">
+            <span>“</span>
+            Maria excels at creating smart solutions, like her QR code landing pages. She communicates effectively, embraces feedback instantly, and delivers high-quality user interfaces under tight deadlines.
+            <span>”</span>
+          </div>
+        </div>
+      </section>
+  
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+        <a href="#home">
+            <img src="html_finalprojimages/home.png" alt="Home"/>
+        </a>
+      </div>
+
+      <div class="popup flex_center" id="popup">
+        <img src="html_finalprojimages/checkmark--outline.svg"/>
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+      </div>
+  </body>
+</html>
